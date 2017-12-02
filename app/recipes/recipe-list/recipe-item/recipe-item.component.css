@@ -1,0 +1,15 @@
+    .list-group-item {
+      border-radius: 0;
+      border-bottom: none;
+    }
+     
+    :host:first-child .list-group-item {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+     
+    :host:last-child .list-group-item {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-bottom: 1px solid rgb(221, 221, 221);
+    }

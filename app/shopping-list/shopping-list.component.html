@@ -1,0 +1,64 @@
+<div class="row">
+	<div class="col-xs-10">
+		<app-shopping-edit
+		(ingredientAdded)="onIngredientAdded($event)"
+		></app-shopping-edit>
+	
+	<hr>
+
+	<ul class="list-group">
+		<a href="" 
+		class="list-group-item" 
+		style="cursor:pointer"
+		*ngFor ="let ingredient of ingredients"
+		>
+			{{ingredient.name}}({{ingredient.amount}})
+		</a>
+	</ul>
+
+</div>
+</div>
+
+<!-- 
+<script type="text/javascript">
+
+var isEven = (x)=>{
+	console.log(x);
+	return (x%2==0)?true:false;
+};
+var number = [1,2,3,4,5,6,7,89,9,98,7,5,3,20];
+
+let aEntries = number.entries();
+console.log(aEntries.next().value);
+console.log(aEntries.next().value);
+console.log(aEntries.next().value);
+console.log(aEntries.next().value);
+console.log(aEntries.next().value);
+
+
+let iterator = number[iterator]();
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+console.log(iterator.next().value);
+
+
+number.reduce(function(previous,current,index){
+	return previous+current;
+});
+
+number.filter(isEven);
+
+number.map(isEven);
+
+
+
+number.every(isEven);
+
+number.some(isEven);
+
+number.forEach(isEven);
+</script>
+ -->
